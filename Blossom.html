@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlossomAura</title>
+    <style>
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #ffb6c1;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 30%;
+    margin: 10px;
+    text-align: center
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BlossomAura</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Our BlossomAura</h2>
+        <p>Welcome to Our Flower Shop!
+
+            At our flower shop, we believe that flowers have the power to express emotions, celebrate special moments, and brighten up any day. Whether you're looking for a stunning bouquet for a wedding, a thoughtful arrangement for a birthday, or simply want to treat yourself or a loved one, we have something for everyone.
+            
+            Explore Our Collection:
+            
+            Seasonal Bouquets: Discover arrangements that celebrate the beauty of each season, featuring the freshest blooms available.
+            
+            Special Occasion Flowers: From anniversaries to graduations, we have the perfect flowers to help you commemorate life's milestones.
+            
+            Sympathy and Remembrance: Express your condolences with tasteful arrangements that honor the memory of loved ones.
+            
+            Everyday Flowers: Brighten up your home or office with our selection of cheerful and vibrant flowers available for everyday occasions.
+            
+            Custom Arrangements: Have a specific vision in mind? Our experienced florists are here to create a personalized bouquet tailored to your needs.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about flowers and committed to providing the best quality blooms.
+            Services Offered:
+Fresh flower arrangements
+Bouquets for various occasions (weddings, birthdays, funerals)
+Delivery services
+Custom floral designs
+Plant sales
+Current Trends in the Flower Shop Industry
+
+Sustainability: Increasing demand for locally sourced and eco-friendly flowers.
+Online Sales: Growth in e-commerce, with many shops offering online ordering and delivery.
+Subscription Services: Monthly flower delivery subscriptions are becoming popular.
+Seasonal Offerings: Special arrangements for holidays and events (e.g., Valentine's Day, Mother's Day).
+Marketing Strategies
+
+Social Media Presence: Utilizing platforms like Instagram and Facebook to showcase arrangements and engage with customers.
+Local Partnerships: Collaborating with event planners, wedding venues, and local businesses for cross-promotion.
+Loyalty Programs: Implementing rewards for repeat customers to encourage loyalty.
+Customer Engagement
+
+Workshops: Hosting floral arrangement workshops to engage the community and attract new customers.
+Feedback Mechanisms: Encouraging customer reviews and feedback to improve services and offerings.
+Conclusion
+
+The flower shop industry is evolving with trends towards sustainability and online sales. Effective marketing and customer engagement strategies are essential for success in this competitive market.
+        </p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSz7bftCqBKvA9sMaj8HiiYcK8WWvQoSlMKb901Pa2SgRyoa-3-32vqQFlpOr6fQsa4AUCCCLg9IoRH35IKQeq-O--WwOMPekaMWVkhEGiEu2USiUN4QCzSEzFaezPycgzkp2Hfg5g&usqp=CAc" alt="Roses">
+                <h3>Roses</h3>
+                <p>Beautiful red roses for your loved ones.</p>
+                <button class="add-to-cart" data-name="Roses" data-price="300">Add to Cart - ₹300</button>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvhs8ZrWejQUrbf7e1iS4gD9sN4EcP_keijQ&s" alt="Tulips">
+                <h3>Tulips</h3>
+                <p>Bright and cheerful tulips for every occasion.</p>
+                <button class="add-to-cart" data-name="Tulips" data-price="500">Add to Cart - ₹500</button>
+            </div>
+            <div class="product-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5AZK-x-T5srIW9gVrzlSDc9FhEn7N4-ZL6w&s" alt="Lilies">
+                <h3>Lilies</h3>
+                <p>Elegant lilies to brighten up your home.</p>
+                <button class="add-to-cart" data-name="Lilies" data-price="700">Add to Cart - ₹700</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 BlossomAura. All rights reserved.</p>
+    </footer>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cartItems"></div>
+            <button id="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
